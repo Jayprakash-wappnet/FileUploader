@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
@@ -7,13 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File_Uploader</title>
 </head>
-        <form onsubmit="myfun">
-           <input type="file" name="File" id="mainFile">
-           <button id="upload">Upload</button>
-           <p id="demo"></p>
-           <script src="index.js"></script>
-        </form>
+<form onsubmit="myfun">
+    <h1 style="color: aqua;">FILE UPLOADER</h1>
+
+    <div id="parent">
+        <div id="child">
+            <input type="text" id="fname" placeholder="Enter file Name">
+            <input type="file" name="File" id="mainFile">
+            <span id="add"><button type="button" onclick="addAnother()">+</button></span>
+            <span id="remove"><button  type="button" onclick="remove()">X</button></span>
+        </div>
+    </div>
+    <button id="upload">Upload</button>
+
+</form>
+<script src="index.js"></script>
+
 <body>
-    
+
 </body>
+
 </html>
